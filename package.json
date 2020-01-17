@@ -1,0 +1,22 @@
+{
+  "name": "nodejsmysqlcrud",
+  "version": "1.0.0",
+  "description": "crud operation on a mysql using nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crukam/nodejsMysqlCrud.git"
+  },
+  "author": "Claude Rukamiza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crukam/nodejsMysqlCrud/issues"
+  },
+  "homepage": "https://github.com/crukam/nodejsMysqlCrud#readme",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  }
+}
