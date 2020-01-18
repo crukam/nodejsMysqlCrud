@@ -24,14 +24,26 @@ connection.connect(function(err) {
       }
       
   });
-  
-  let employee = `INSERT INTO employees(employee_name,employee_salary,employee_age)
+  //adding a record
+  /*let employee = `INSERT INTO employees(employee_name,employee_salary,employee_age)
   VALUES('Paul',20000,25)`;
   connection.query(employee,function(err){
     if(err){
       return console.log(err.message);
     }
     console.log('New record inserted')
+  });
+  //deleting a record
+  let employeetodelete= 'DELETE FROM employees where id=1';
+  connection.query(employeetodelete,function(err){
+    if(err) throw err;
+    console.log('employee deleted');
+  });*/
+  //fetching record from mysql
+  let allrecords='SELECT * FROM employees';
+  connection.query(allrecords,function(err,result){
+     if(err) throw err;
+     console.log(result);
   });
   connection.end(function(err){
     if(err){
